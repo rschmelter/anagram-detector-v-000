@@ -7,15 +7,15 @@ class Anagram
   end
 
   def match(array)
-    new_array = []
+    matches = []
     array.each do |word|
       if word.split("").sort == @word.sort
-        new_array << word
+        matches << word
       else
-        []
+        maches = []
       end
     end
-      new_array
+      matches
   end
 
 end
